@@ -12,3 +12,8 @@ Anchorage lets you deploy your application to helm container instance. It is mea
 
 ### Onboarding apps
 
+Adding new apps to Anchorage:
+
+![alt text][onboarding]
+
+[onboarding]: https://raw.githubusercontent.com/huskywhale/anchorage-deploy/master/wiki/onboarding.png "onboarding"
