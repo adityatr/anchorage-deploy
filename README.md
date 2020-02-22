@@ -47,3 +47,4 @@ Grey means MVP we only do bare min
 ### What does it use ?
 Vue 2 for FE
 Node/Express.js for Backend
+Hapi.js/Joi for validation
