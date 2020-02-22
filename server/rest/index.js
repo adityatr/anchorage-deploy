@@ -12,7 +12,8 @@ module.exports = (app) => {
           res.status(400).send(stderr)
         }
         if (stdout) {
-          res.send('hello')
+          // todo: add the repo to postgress
+          res.send('sucess')
         }
       })
     })

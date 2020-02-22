@@ -48,3 +48,4 @@ Grey means MVP we only do bare min
 Vue 2 for FE
 Node/Express.js for Backend
 Hapi.js/Joi for validation
+todo: add postgress
