@@ -37,3 +37,13 @@ Grey means MVP we only do bare min
 5. Learn how to create a helm chart ( charts are used to deploy things in a helm env)
 6. People will want to use encryption keys ( encrypt with some hash for now)
 7. Connect to kubernetes cluster ( for now lets learn to connect to a local k8 cluster- minikube )
+
+### How to Run ?
+<ol>
+<li>Npm I</li>
+<li>Npm run dev:serve for dev</li>
+</ol>
+
+### What does it use ?
+Vue 2 for FE
+Node/Express.js for Backend
