@@ -40,8 +40,8 @@ Grey means MVP we only do bare min
 
 ### How to Run ?
 <ol>
-<li>Npm I</li>
-<li>Npm run dev:serve for dev</li>
+<li>npm i</li>
+<li>npm run start for dev</li>
 </ol>
 
 ### What does it use ?
