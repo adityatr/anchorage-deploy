@@ -1,19 +1,22 @@
-const { ApolloServer, gql } = require('apollo-server-express')
+const { ApolloServer } = require('apollo-server-express')
+const path = require('path')
+const fs = require('fs')
+const resolvers = require('./resolvers')
+const mockUsers = require('../mock/users.json')
+const typeDefs = fs.readFileSync(path.join(__dirname, 'schema.gql')).toString()
 module.exports = (app) => {
-  // Construct a schema, using GraphQL schema language
-  const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`
-
   // Provide resolver functions for your schema fields
-  const resolvers = {
-    Query: {
-      hello: () => 'Hello world!'
-    }
-  }
 
-  const apollo = new ApolloServer({ typeDefs, resolvers })
+  const apollo = new ApolloServer({
+    typeDefs,
+    resolvers,
+    context: ({ req }) => {
+      const token = req.header.authorization || ''
+      const id = Number(token)
+      console.log('id', id)
+      const user = mockUsers.find(u => u.id === id)
+      return { user }
+    }
+  })
   apollo.applyMiddleware({ app })
 }
