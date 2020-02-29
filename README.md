@@ -39,8 +39,9 @@ Grey means MVP we only do bare min
 7. Connect to kubernetes cluster ( for now lets learn to connect to a local k8 cluster- minikube )
 
 ### How to Run ?
-1. `npm run bootstrap`
-2. `npm run start` for dev
+1. `sudo npm i -g lerna`
+2. `npm run bootstrap`
+3. `npm run start` for dev
 
 ### What does it use ?
 Vue 2 for FE
