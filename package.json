@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "lerna run start",
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap",
     "pretest": "eslint packages",
     "test": "jest"
   }
