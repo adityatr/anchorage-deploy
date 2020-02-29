@@ -7,6 +7,7 @@
     "lerna": "^2.0.0"
   },
   "scripts": {
+    "start": "lerna run start",
     "bootstrap": "lerna bootstrap --hoist",
     "pretest": "eslint packages",
     "test": "jest"
