@@ -126,3 +126,5 @@ yarn-error.log*
 *.sw?
 
 /live/
+
+packages/jenkins/out
