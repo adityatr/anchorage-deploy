@@ -4,6 +4,7 @@
   "description": "Connects to jenkins n shiz",
   "main": "index.ts",
   "scripts": {
+    "start": "npm run compile && node ./out/index.js",
     "debug": "node --inspect-brk ./out/index.js",
     "compile": "tsc --build tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
