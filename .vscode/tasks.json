@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "compile",
+			"path": "packages/jenkins/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: compile - packages/jenkins",
+			"detail": "tsc --build tsconfig.json"
+		}
+	]
+}
