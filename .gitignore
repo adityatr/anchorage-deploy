@@ -127,4 +127,4 @@ yarn-error.log*
 
 /live/
 
-packages/jenkins/out
+packages/jobs/out
