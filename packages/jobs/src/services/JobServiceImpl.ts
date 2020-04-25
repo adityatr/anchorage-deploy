@@ -4,7 +4,6 @@ import {UUID} from '../types';
 import {v4 as uuidv4} from 'uuid';
 class JobServiceImpl implements JobService {
   private jenkins: JenkinsPromisifiedAPI;
-
   constructor(jobServerBaseUrl: string, username: string, apiToken: string) {
     const basicAuthToken = Buffer.from(
       `${username}:${apiToken}`,
