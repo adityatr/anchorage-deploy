@@ -1,5 +1,5 @@
 {
-  "name": "jenkins",
+  "name": "@anchorage-deploy/jenkins",
   "version": "1.0.0",
   "description": "Connects to jenkins n shiz",
   "main": "index.ts",
@@ -12,6 +12,10 @@
   "author": "Ur Mum",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^25.4.0",
     "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "jenkins": "^0.28.0"
   }
 }
