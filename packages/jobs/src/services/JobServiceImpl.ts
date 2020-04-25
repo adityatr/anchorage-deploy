@@ -5,37 +5,15 @@ import {UUID} from '../types';
 class JobServiceImpl implements JobService {
   jenkins: any;
 
-  constructor() {
+  constructor(jobServerBaseUrl: string, username: string, apiToken: string) {
+    const basicAuthToken = Buffer.from(
+      `${username}:${apiToken}`,
+      'base64'
+    ).toString('ascii');
     this.jenkins = jenkins({
-      //   assignedLabels: [],
-      description: null,
-      jobs: [
-        {
-          color: 'blue',
-          name: 'example',
-          url: 'http://localhost:8080/job/example/',
-        },
-      ],
-      mode: 'NORMAL',
-      nodeDescription: 'the master Jenkins node',
-      nodeName: '',
-      numExecutors: 2,
-      overallLoad: {},
-      primaryView: {
-        name: 'All',
-        url: 'http://localhost:8080/',
-      },
-      quietingDown: false,
-      slaveAgentPort: 12345,
-      unlabeledLoad: {},
-      useCrumbs: false,
-      useSecurity: false,
-      views: [
-        {
-          name: 'All',
-          url: 'http://localhost:8080/',
-        },
-      ],
+      baseUrl: jobServerBaseUrl,
+      promisify: true,
+      headers: `Authorization: Basic ${basicAuthToken}`,
     });
   }
   public createJob(config: JobConfig) {}
