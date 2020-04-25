@@ -1,7 +1,7 @@
 {
-  "name": "@anchorage-deploy/jenkins",
+  "name": "@anchorage-deploy/jobs",
   "version": "1.0.0",
-  "description": "Connects to jenkins n shiz",
+  "description": "Job service utilizing jenkins internally",
   "main": "index.ts",
   "scripts": {
     "start": "npm run compile && node ./out/index.js",
@@ -19,10 +19,11 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "jest": "^25.4.0",
-    "typescript": "~3.8.0",
+    "@types/jenkins": "^0.23.1",
+    "@types/node": "^10.0.3",
     "gts": "^2.0.0",
-    "@types/node": "^10.0.3"
+    "jest": "^25.4.0",
+    "typescript": "~3.8.0"
   },
   "dependencies": {
     "jenkins": "^0.28.0"
