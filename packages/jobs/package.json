@@ -7,7 +7,7 @@
     "start": "npm run compile && node ./out/index.js",
     "debug": "node --inspect-brk ./out/index.js",
     "compile": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "check": "gts check",
     "clean": "gts clean",
     "fix": "gts fix",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@types/jenkins": "^0.23.1",
+    "@types/jest": "^25.2.1",
     "@types/node": "^10.0.3",
     "gts": "^2.0.0",
     "jest": "^25.4.0",

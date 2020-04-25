@@ -1,3 +1,3 @@
-import JobServiceImpl from 'services/JobServiceImpl';
+import JobServiceImpl from './services/JobServiceImpl';
 
 export default JobServiceImpl;
