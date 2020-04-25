@@ -21,7 +21,8 @@
     "@babel/core": "^7.9.0",
     "@types/jenkins": "^0.23.1",
     "@types/jest": "^25.2.1",
-    "@types/node": "^10.0.3",
+    "@types/node": "^10.17.21",
+    "@types/uuid": "^7.0.3",
     "gts": "^2.0.0",
     "jest": "^25.4.0",
     "typescript": "~3.8.0"
