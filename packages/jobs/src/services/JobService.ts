@@ -1,10 +1,10 @@
 import {UUID} from '../types';
 
 interface JobService {
-  createJob: (config: JobConfig) => void;
-  getJob: (id: UUID) => Job;
-  deleteJob: (id: UUID) => void;
-  listJobs: () => Job[];
+  createJob: (config: JobConfig) => Promise<UUID>;
+  getJob: (id: UUID) => Promise<Job>;
+  deleteJob: (id: UUID) => Promise<void>;
+  listJobs: () => Promise<Job[]>;
 }
 
 export default JobService;
