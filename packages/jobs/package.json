@@ -28,6 +28,7 @@
     "typescript": "~3.8.0"
   },
   "dependencies": {
-    "jenkins": "^0.28.0"
+    "jenkins": "^0.28.0",
+    "xml-js": "^1.6.11"
   }
 }
